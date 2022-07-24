@@ -1,0 +1,215 @@
+/* TABLE OF CONTENTS */
+/*--------- 
+1. General
+2. Navbar
+3. Banner
+4. Services
+5. Blog
+6. Contact
+7. footer
+------------ */
+/* 1. General */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  /* Background Color */
+  --secondaru-color:#f77949;
+  --bg-blue:#37418e;
+  --bg-white:#fff;
+  --bg-dark-blue:#292b70;
+  --bg-gray:#ecf0f9;
+  /* text color */
+  --text-black:#1f1f1f;
+  --text-blue:#1f294c;
+  --text-gray:#6d6e7b;
+  --text-white:#fff;
+  /* fonts */
+  --primary-font:'Open Sans Condensed', sans-serif;
+  --secondary-font: 'open sans', sans-serif;
+}
+body{
+  font-family: var(--secondary-font);
+  background-image: url('../images/page-background.jpg');
+  background-size: cover;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  overflow-x: hidden;
+}
+/* cutsom CSS */
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: var(--bg-gray);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--secondaru-color);
+}
+section{
+  padding: 50px 0;
+}
+.main-btn{
+  display: inline-block;
+  border-radius: 26px;
+  transition: .2s;
+  padding: 10px 37px;
+  background-color: var(--secondaru-color);
+  color: var(--text-white);
+  font-weight: 700;
+  font-family: var(--primary-font);
+  font-size: 17px;
+  text-decoration: none;
+  box-shadow: 0 0 1px rgb(0 0 0 /0%);
+}
+.main-btn:hover{
+  background-color: var(--bg-blue);
+  color: var(--text-white);
+}
+h1{
+  font-size: 70px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: var(--text-blue);
+  margin-bottom: 16px;
+}
+h2{
+  font-size: 50px;
+  line-height: 64px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: var(--text-blue);
+  margin-bottom: 15px;
+  letter-spacing: 0;
+}
+h3{
+  font-size: 30px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: var(--text-blue);
+  margin-bottom: 15px;
+  letter-spacing: 0;
+}
+P{
+  color: var(--text-gray);
+  font-size: 15px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 400;
+}
+input:hover,
+input:focus,
+textarea:focus,
+textarea:hover,
+button{
+  border-color: var(--secondaru-color) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* 2. Navbar */
+.header-wrapper .navbar{
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.header-wrapper .navbar-brand img{
+  max-width: 150px;
+  height: auto;
+}
+.header-wrapper .navbar-toggler{
+  border: 0;
+}
+.header-wrapper .navbar-toggler:focus{
+  box-shadow: none;
+}
+.header-wrapper .nav-item{
+  margin: 0 10px;
+}
+.header-wrapper .nav-item .nav-link{
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-blue);
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+}
+.header-wrapper .nav-item .nav-link.active{
+  color: var(--secondaru-color);
+}
+.header-scrolled{
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  background-color: var(--bg-white);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+}
+/* 3. Banner */
+.banner-wrapper{
+  padding-top: 100px;
+}
+/* 4. Services */
+.services-wrapper h3 span{
+  color: var(--secondaru-color);
+}
+.services-wrapper .service-phone{
+  max-width: 80%;
+}
+/* 5. Blog */
+.blog-wrapper .newsletter-wrapper{
+  background-color: var(--bg-blue);
+}
+.blog-wrapper .newsletter{
+  width: 50%;
+  margin: auto;
+}
+.blog-wrapper .form-control{
+  background-color: var(--bg-dark-blue);
+  border-color: var(--bg-dark-blue);
+  border-style: solid;
+  border-radius: 26px;
+  color: var(--text-white);
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 10px 32px;
+}
+.blog-wrapper input::placeholder{
+  color: var(--text-white);
+}
+.blog-wrapper a{
+  color: var(--bg-dark-blue);
+  text-decoration: none;
+}
+.blog-wrapper .date,
+.blog-wrapper .card a:hover{
+  color: var(--secondaru-color);
+}
+/* 6. Contact */
+.contact-wrapper input,
+.contact-wrapper textarea{
+  background-color: var(--bg-white);
+  border-color: var(--bg-gray);
+  border-radius: 15px;
+  color: var(--text-gray);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px 32px 15px 21px;
+}
+/* 7. footer */
+.footer-wrapper a{
+  color: var(--text-gray);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.footer-wrapper a:hover{
+  color: var(--secondaru-color);
+}
